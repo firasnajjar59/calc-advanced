@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calc | Simple</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <div
+      class="wrapper bg-dark bg-gradient d-flex flex-column justify-content-center d-flex align-items-center"
+    >
+      <div
+        class="container d-flex flex-column justify-content-center d-flex align-items-center">
+       
+       
+        <div class="row mt-3">
+          <div class="col d-flex justify-content-center align-items-center">
+            <div class="d-flex justify-content-end p-3 align-items-center" id="screen">0</div>
+          </div>
+        </div>
+
+       
+        <div class="row mt-3">
+          <div class="col-3">
+            <button id="" onclick="clearNum()" class="btn btn-light">C</button></div>
+          <div class="col-3">
+            <button id="" onclick="percentOperator()" class="btn btn-light">%</button></div>
+          <div class="col-3">
+            <button id="pow" onclick="check(pow)" class="btn btn-light">^</button></div>
+          <div class="col-3">
+            <button id="divide" onclick="check(divide)" class="btn btn-warning">÷</button></div>
+        </div>
+
+        
+        <div class="row mt-3">
+          <div class="col-3">
+            <button id="seven" onclick="assignNum(seven)" class="btn btn-secondary">7</button></div>
+          <div class="col-3">
+            <button id="eight" onclick="assignNum(eight)" class="btn btn-secondary">8</button></div>
+          <div class="col-3">
+            <button id="nine" onclick="assignNum(nine)" class="btn btn-secondary">9</button></div>
+          <div class="col-3">
+            <button id="multiplication" onclick="check(multiplication)" class="btn btn-warning">x</button>
+        </div>
+        </div>
+       
+       
+        <div class="row mt-3">
+          <div class="col">
+            <button id="four" onclick="assignNum(four)" class="btn btn-secondary">4</button></div>
+          <div class="col">
+            <button id="five" onclick="assignNum(five)" class="btn btn-secondary">5</button></div>
+          <div class="col">
+            <button id="six" onclick="assignNum(six)" class="btn btn-secondary">6</button></div>
+          <div class="col">
+            <button id="minus" onclick="check(minus)" class="btn btn-warning">-</button></div>
+        </div>
+      
+      
+        <div class="row mt-3">
+          <div class="col-3">
+            <button onclick="assignNum(one)" id="one" class="btn btn-secondary">1</button></div>
+          <div class="col-3">
+            <button id="two" onclick="assignNum(two)" class="btn btn-secondary">2</button></div>
+          <div class="col-3">
+            <button id="three" onclick="assignNum(three)" class="btn btn-secondary">3</button></div>
+          <div class="col-3">
+            <button id="plus" onclick="check(plus)" class="btn btn-warning">+</button></div>
+        </div>
+        
+        
+        <div class="row mt-3">
+          <div class="col-3">
+            <button class="btn btn-secondary" id="plusMinnus">±</button>
+          </div>
+          <div class="col-3">
+            <button id="zero" onclick="assignNum(zero)" class="btn btn-secondary">0</button>
+          </div>
+          <div class="col-3">
+            <button id="point" onclick="assignNum(point)" class="btn btn-secondary">.</button>
+          </div>
+          <div class="col-3">
+            <button id="equl" onclick="equalOperator()" class="btn btn-dark">=</button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
